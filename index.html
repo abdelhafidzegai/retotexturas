@@ -1,0 +1,42 @@
+<html>
+<head>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-assets>
+            <img id="suelo" src="suelos.jpg">
+            <img id="pared" src="paredes.jpg">
+            <img id="viga" src="vigas.jpg">
+            <img id="gato" src="gato.jpg">
+            <img id="perro" src="perro.jpg">
+            <img id="pajaro" src="pajaro.jpg">
+            <img id="pez" src="pez.jpg">
+        </a-assets>
+        <a-box position="0 0.1 0"depth="3"height="0.2" width="3"src="#suelo">
+        </a-box>
+        <a-box position="0 1.7 -1.4"rotation="90 90 90"depth="3"height="0.2"width="3"src="#pared">
+        </a-box>
+        <a-box position="1.4 1.7 0" rotation="90 0 90"depth="3"height="0.2 width="3" src="#pared">
+        </a-box>
+        <a-box position="-1.4 1.7 0" rotation="90 0 90"depth="3" height="0.2" width="3"src="#pared">
+        </a-box>
+        <a-box position="0 3.2 0"depth="3"height="0.2"width="3"src="#viga">
+        </a-box>
+        <a-box position="-0.8 0.8 -0.5"depth="0.6" height="0.6"width="0.6"src="#gato">
+        </a-box>
+        <a-sphere position="0 0.8 0"radius="0.35"src="#perro">
+        </a-sphere>
+        <a-cylinder position="0.8 0.8 -0.5"radius="0.25"height="0.7"src="#pajaro">
+        </a-cylinder>
+        <a-cone position="0 0.8 0.8"radius-bottom="0.3"height="0.8"src="#pez">
+        </a-cone>
+        <a-light type="ambient" position="3 3 3"color="#FFF">
+        </a-light>
+        <a-entity id="rig" position="-3 1 3">
+            <a-camera></a-camera>
+        </a-entity>
+        <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+</body>
+</html>
